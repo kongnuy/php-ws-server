@@ -29,6 +29,13 @@ $server = IoSecureServer::factory(
       new MyServer()
     )
   ),
-  5000
+  5000,
+  '0.0.0.0',
+  array(
+    'local_cert' => '/etc/letsencrypt/live/ws.kongnuy.com/fullchain.pem',
+    'local_pk' => '/etc/letsencrypt/live/ws.kongnuy.com/privkey.pem',
+    'allow_self_signed' => TRUE,
+    'verify_peer' => FALSE,
+  )
 );
 $server->run();
