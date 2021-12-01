@@ -1,0 +1,21 @@
+{
+  "name": "kongnuy/vchat",
+  "description": "Video chat app with php, webrtc and websocket",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "MyApp\\": "core"
+    }
+  },
+  "require": {
+    "cboden/ratchet": "^0.4.3",
+    "guzzlehttp/guzzle": "^7.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "kongnuy",
+      "email": "kongnuyvictorien@gmail.com"
+    }
+  ]
+}
