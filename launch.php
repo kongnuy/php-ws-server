@@ -28,7 +28,6 @@ $server = IoSecureServer::factory(
     new WsServer(
       new MyServer()
     )
-  ),
-  5000
+  )
 );
 $server->run();
